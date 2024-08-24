@@ -1,0 +1,14 @@
+D:\Programacao\Repos\VEHICLE-SHOP\bin\Debug\net8.0\VEHICLE-SHOP.exe
+D:\Programacao\Repos\VEHICLE-SHOP\bin\Debug\net8.0\VEHICLE-SHOP.deps.json
+D:\Programacao\Repos\VEHICLE-SHOP\bin\Debug\net8.0\VEHICLE-SHOP.runtimeconfig.json
+D:\Programacao\Repos\VEHICLE-SHOP\bin\Debug\net8.0\VEHICLE-SHOP.dll
+D:\Programacao\Repos\VEHICLE-SHOP\bin\Debug\net8.0\VEHICLE-SHOP.pdb
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.AssemblyInfoInputs.cache
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.AssemblyInfo.cs
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.csproj.CoreCompileInputs.cache
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.dll
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\refint\VEHICLE-SHOP.dll
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.pdb
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\VEHICLE-SHOP.genruntimeconfig.cache
+D:\Programacao\Repos\VEHICLE-SHOP\obj\Debug\net8.0\ref\VEHICLE-SHOP.dll
