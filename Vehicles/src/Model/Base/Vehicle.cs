@@ -11,7 +11,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Model.Base
 {
     public abstract class Vehicle
     {
-        static private int _Id = 1;
+        static private int _Id = 0;
         public int VehicleId { get; protected set; }
         public string Name { get; protected set; } = "Default";
         public string Make { get; protected set; } = "Default";
@@ -34,6 +34,15 @@ namespace VEHICLE_SHOP.Vehicles.src.Model.Base
             Year = year;
             Engine = vehicleEngine;
             VehicleId = _Id++;
+        }
+
+        public virtual bool Valid()
+        {
+            return !string.IsNullOrEmpty(Name)  && 
+                   !string.IsNullOrEmpty(Make)  &&
+                   !string.IsNullOrEmpty(Model) &&
+                   Year      > 0 &&
+                   VehicleId > 0;
         }
     }
 }

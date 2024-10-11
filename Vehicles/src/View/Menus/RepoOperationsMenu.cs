@@ -45,7 +45,7 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
             DisplayOptions("");
         }
 
-        public void LoadRepository(VehicleRepo repository)
+        public void LoadRepository(VehicleRepository repository)
         {
             VehicleShop.CurrentRepo = repository;
             currentRepoId = repository._repoId;

@@ -14,7 +14,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
 {
     static internal class RepoController
     {
-        static public void ShowRepo(VehicleRepo? Repo)
+        static public void ShowRepo(VehicleRepository? Repo)
         {
             if (Repo is null)
             {
@@ -30,7 +30,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
                 Repo.ReadItem(item);
         }
 
-        static public void InsertVehicle(VehicleRepo destRepo)
+        static public void InsertVehicle(VehicleRepository destRepo)
         {
             string type;
             Console.Write($"{BOLD}{BBLUE}{FWHITE}VEHICLE TYPE:{RESET} {BYELLOW}{FBLACK}");
@@ -50,7 +50,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
             Thread.Sleep(1000);
         }
 
-        static public void InsertVehicle(VehicleRepo destRepo, Vehicle? srcVehicle)
+        static public void InsertVehicle(VehicleRepository destRepo, Vehicle? srcVehicle)
         {
             if(srcVehicle == null)
             {
@@ -61,7 +61,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
             destRepo.AddItem(srcVehicle);
         }
 
-        static public void RemoveVehicle(VehicleRepo srcRepo)
+        static public void RemoveVehicle(VehicleRepository srcRepo)
         {
             Vehicle? vehicle = SearchController.SearchId(srcRepo);
             if(vehicle == null)
@@ -77,7 +77,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
             Thread.Sleep(1250);
         }
 
-        static public void ShowVehicle(VehicleRepo repo, Vehicle item)
+        static public void ShowVehicle(VehicleRepository repo, Vehicle item)
         {
             repo.ReadItem(item);
         }

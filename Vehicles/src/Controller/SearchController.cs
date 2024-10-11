@@ -13,7 +13,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
 {
     internal class SearchController
     {
-        static public Vehicle? SearchId(VehicleRepo? SourceRepository)
+        static public Vehicle? SearchId(VehicleRepository? SourceRepository)
         {
             if (SourceRepository is null)
             {
@@ -33,7 +33,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
             Write(RESET);
             return SourceRepository._vehicles.Find(x => x.VehicleId == id);
         }
-        static public VehicleRepo? SearchMake(VehicleRepo? SourceRepository)
+        static public VehicleRepository? SearchMake(VehicleRepository? SourceRepository)
         {
             if (SourceRepository is null)
             {
@@ -56,7 +56,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
             return new(-1, SourceRepository._vehicles.FindAll(x => x.Make.ToLower().Equals(make)));
         }
 
-        static public VehicleRepo? SearchModel(VehicleRepo? SourceRepository)
+        static public VehicleRepository? SearchModel(VehicleRepository? SourceRepository)
         {
             if (SourceRepository is null)
             {
@@ -78,7 +78,7 @@ namespace VEHICLE_SHOP.Vehicles.src.Controller
             Write(RESET);
             return new(-1, SourceRepository._vehicles.FindAll(x => x.Model.ToLower().Equals(model)));
         }
-        static public VehicleRepo? SearchYear(VehicleRepo? SourceRepository)
+        static public VehicleRepository? SearchYear(VehicleRepository? SourceRepository)
         {
             if (SourceRepository is null)
             {

@@ -7,13 +7,20 @@ using System.Text;
 using VEHICLE_SHOP.Vehicles.src.Model.Base;
 using VEHICLE_SHOP.Vehicles.src.Repository;
 using VEHICLE_SHOP.Vehicles.src.Model.Derived;
+using VEHICLE_SHOP.Vehicles.src.Controller;
+using VEHICLE_SHOP.Vehicles.src.View.Vehicles;
+using VEHICLE_SHOP.Vehicles.src.Services;
 
 namespace VEHICLE_SHOP.Vehicles.src
 {
     public class VehicleShop
     {
-        static internal List<VehicleRepo> Stock = new List<VehicleRepo> ();
-        static internal VehicleRepo? CurrentRepo = null;
+        static internal List<VehicleRepository<Vehicle>>  Stock = new();
+        static internal VehicleRepository<Vehicle>? CurrentRepository = null;
+
+        static internal VehicleView View;
+        static internal VehicleService<Vehicle> GeneralService = new(CurrentRepository);
+        static internal VehicleController<Vehicle>  Controller = new(CurrentRepository, GeneralService);
 
         static internal HomeMenu Home = new HomeMenu();
         static internal ShopMenu UserMenu = new ShopMenu();
@@ -36,9 +43,9 @@ Current version: 0.0.1.0-2024.08.23";
 
         public VehicleShop()
         {
-            Stock.Add(new VehicleRepo(0001));
-            Stock.Add(new VehicleRepo(0002));
-            Stock.Add(new VehicleRepo(0003));
+            Stock.Add(new VehicleRepository(0001));
+            Stock.Add(new VehicleRepository(0002));
+            Stock.Add(new VehicleRepository(0003));
         }
 
         public void Start()

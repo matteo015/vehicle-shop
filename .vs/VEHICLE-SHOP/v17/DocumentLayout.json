@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\controller\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\controller\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\view\\menus\\searchmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\view\\menus\\searchmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\controller\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\controller\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\view\\vehicles\\vehicleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\view\\vehicles\\vehicleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\repository\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\repository\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|d:\\programacao\\repos\\vehicle-shop\\vehicles\\src\\repository\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF24631-9EFF-47C5-91F3-BF438C9B2DF5}|VEHICLE-SHOP.csproj|solutionrelative:vehicles\\src\\repository\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Program.cs",
+              "RelativeDocumentMoniker": "Vehicles\\src\\Program.cs",
+              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Program.cs",
+              "RelativeToolTip": "Vehicles\\src\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:56:09.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehicleView.cs",
+              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\View\\Vehicles\\VehicleView.cs",
+              "RelativeDocumentMoniker": "Vehicles\\src\\View\\Vehicles\\VehicleView.cs",
+              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\View\\Vehicles\\VehicleView.cs",
+              "RelativeToolTip": "Vehicles\\src\\View\\Vehicles\\VehicleView.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:51:40.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Services\\VehicleService.cs",
+              "RelativeDocumentMoniker": "Vehicles\\src\\Services\\VehicleService.cs",
+              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Services\\VehicleService.cs",
+              "RelativeToolTip": "Vehicles\\src\\Services\\VehicleService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:16:46.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Controller\\VehicleController.cs",
+              "RelativeDocumentMoniker": "Vehicles\\src\\Controller\\VehicleController.cs",
+              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Controller\\VehicleController.cs",
+              "RelativeToolTip": "Vehicles\\src\\Controller\\VehicleController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T23:23:41.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VehicleRepository.cs",
+              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Repository\\VehicleRepository.cs",
+              "RelativeDocumentMoniker": "Vehicles\\src\\Repository\\VehicleRepository.cs",
+              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Repository\\VehicleRepository.cs",
+              "RelativeToolTip": "Vehicles\\src\\Repository\\VehicleRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T21:14:03.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRepo.cs",
+              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Repository\\IRepo.cs",
+              "RelativeDocumentMoniker": "Vehicles\\src\\Repository\\IRepo.cs",
+              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Repository\\IRepo.cs",
+              "RelativeToolTip": "Vehicles\\src\\Repository\\IRepo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T21:10:38.939Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -39,45 +129,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchController.cs",
-              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Controller\\SearchController.cs",
-              "RelativeDocumentMoniker": "Vehicles\\src\\Controller\\SearchController.cs",
-              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Controller\\SearchController.cs",
-              "RelativeToolTip": "Vehicles\\src\\Controller\\SearchController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T15:34:40.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SearchMenu.cs",
-              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\View\\Menus\\SearchMenu.cs",
-              "RelativeDocumentMoniker": "Vehicles\\src\\View\\Menus\\SearchMenu.cs",
-              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\View\\Menus\\SearchMenu.cs",
-              "RelativeToolTip": "Vehicles\\src\\View\\Menus\\SearchMenu.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAIwC8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T15:33:48.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Program.cs",
-              "RelativeDocumentMoniker": "Vehicles\\src\\Program.cs",
-              "ToolTip": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\Vehicles\\src\\Program.cs",
-              "RelativeToolTip": "Vehicles\\src\\Program.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAQwCUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T00:46:04.099Z",
-              "EditorCaption": ""
             }
           ]
         }

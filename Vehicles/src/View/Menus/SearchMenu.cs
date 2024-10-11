@@ -43,7 +43,7 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
             while (true)
             {
                 Vehicle? src = null;
-                VehicleRepo? srcList = null;
+                VehicleRepository? srcList = null;
                 switch (base.GetUserOption())
                 {
                     case 0:

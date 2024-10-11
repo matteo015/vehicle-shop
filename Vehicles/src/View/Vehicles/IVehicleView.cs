@@ -7,10 +7,10 @@ using VEHICLE_SHOP.Vehicles.src.Model.Base;
 
 namespace VEHICLE_SHOP.Vehicles.src.View.Vehicles
 {
-    internal interface IVehicleView
+    public interface IVehicleView<T> where T : Vehicle
     {
-        public string GetDetails(Vehicle vehicle);
+        public string GetDetails(T vehicle);
 
-        public string GetEngineDetails(Vehicle vehicle);
+        public string GetEngineDetails(T vehicle);
     }
 }
