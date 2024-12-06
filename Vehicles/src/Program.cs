@@ -10,17 +10,19 @@ using VEHICLE_SHOP.Vehicles.src.Model.Derived;
 using VEHICLE_SHOP.Vehicles.src.Controller;
 using VEHICLE_SHOP.Vehicles.src.View.Vehicles;
 using VEHICLE_SHOP.Vehicles.src.Services;
+using System.ComponentModel.Design;
+using VEHICLE_SHOP.Vehicles.src.Repository;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace VEHICLE_SHOP.Vehicles.src
 {
     public class VehicleShop
     {
-        static internal List<VehicleRepository<Vehicle>>  Stock = new();
-        static internal VehicleRepository<Vehicle>? CurrentRepository = null;
+        static internal List<RepositoryClient<Vehicle>>  Stock = new();
+        static internal RepositoryClient<Vehicle>? CurrentRepository = null;
 
         static internal VehicleView View;
-        static internal VehicleService<Vehicle> GeneralService = new(CurrentRepository);
-        static internal VehicleController<Vehicle>  Controller = new(CurrentRepository, GeneralService);
+        static internal RepositoryController<Vehicle> Controller;
 
         static internal HomeMenu Home = new HomeMenu();
         static internal ShopMenu UserMenu = new ShopMenu();
@@ -41,29 +43,43 @@ Version naming - MAJOR.MILESTONE.MINOR.PATCH
                             
 Current version: 0.0.1.0-2024.08.23";
 
-        public VehicleShop()
-        {
-            Stock.Add(new VehicleRepository(0001));
-            Stock.Add(new VehicleRepository(0002));
-            Stock.Add(new VehicleRepository(0003));
-        }
 
-        public void Start()
+
+		public VehicleShop(IRepositoryService<Vehicle> repositoryService)
+		{
+			Controller = new RepositoryController<Vehicle>(CurrentRepository, repositoryService);
+		}
+		public void Start()
         {
+            Stock.Add(new RepositoryClient<Vehicle>());
+			Stock.Add(new RepositoryClient<Vehicle>());
+			Stock.Add(new RepositoryClient<Vehicle>());
             Console.WindowWidth = 59;
             Console.CursorVisible = false;
             Console.SetCursorPosition(0, 0);
             Console.Clear();
             Home.RunMenu();
         }
-    }
+	}
     static class Program
     {
         public static void Main()
         {
-            VehicleShop Shop = new VehicleShop();
+            var services = new ServiceCollection();
+            ConfigureServices(services);
+            var provider = services.BuildServiceProvider();
 
-            Shop.Start();
+            RepositoryService<Vehicle> repositoryService = provider.GetRequiredService<RepositoryService<Vehicle>>();
+            VehicleShop Shop = new VehicleShop(repositoryService);
+
+			Shop.Start();
+
         }
-    }
+
+		private static void ConfigureServices(IServiceCollection services)
+		{
+			services.AddScoped<IRepositoryClient<Vehicle>, RepositoryClient<Vehicle>>();
+			services.AddScoped<RepositoryService<Vehicle>>();
+		}
+	}
 }

@@ -8,10 +8,15 @@ using VEHICLE_SHOP.Vehicles.src.Repository;
 
 namespace VEHICLE_SHOP.Vehicles.src.Services
 {
-    public class VehicleService<T> : IVehicleService<T> where T : Vehicle
+    public class RepositoryService<T>(IRepositoryClient<T> repository) : IRepositoryService<T> where T : Vehicle
     {
-        private IRepo<T> repository;
-        public VehicleService(IRepo<T> repository) => this.repository = repository;
+        private IRepositoryClient<T> _repository = repository;
+
+        public void LoadRepository(IRepositoryClient<T> repository)
+        {
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+        }
+
         public void AddVehicle(T vehicle)
         { 
             if(vehicle is null)

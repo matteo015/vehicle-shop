@@ -42,8 +42,8 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
             if (!DeleteMessageValidation(SelectedId.ToString()))
                 return;
 
-            if (VehicleShop.CurrentRepo == VehicleShop.Stock.Find(x => x._repoId == SelectedId))
-                VehicleShop.CurrentRepo = null;
+            if (VehicleShop.CurrentRepository == VehicleShop.Stock.Find(x => x._repoId == SelectedId))
+                VehicleShop.CurrentRepository = null;
             VehicleShop.Stock.Remove(
                 VehicleShop.Stock.Find(x => x._repoId == SelectedId));
         }

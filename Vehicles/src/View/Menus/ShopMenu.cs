@@ -49,7 +49,8 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
                     case 1:
                         Clear();
                         DisplayTitle();
-                        RepoController.ShowRepo(VehicleShop.CurrentRepo);
+                    //RepoController.ShowRepo(VehicleShop.CurrentRepository);
+                    VehicleShop.Controller.ReadRepository();
                         ReadKey();
                         break;
                     case 2:

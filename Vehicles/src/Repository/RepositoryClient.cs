@@ -10,16 +10,22 @@ using VEHICLE_SHOP.Vehicles.src.Model.Base;
 
 namespace VEHICLE_SHOP.Vehicles.src.Repository
 {
-    public class VehicleRepository<T> : IRepo<T> where T : Vehicle
+    public class RepositoryClient<T> : IRepositoryClient<T> where T : Vehicle
     {
         private static int ID = 0;
         public int _repoId { get; protected set; }
         public readonly List<T> _vehicles;
 
-        public VehicleRepository()
+        public RepositoryClient()
         {
             _repoId = ID++;
             _vehicles = new List<T>();
+        }
+
+        public RepositoryClient(int existingId, List<T> existingRepository)
+        {
+            _repoId = existingId;
+            _vehicles = existingRepository;
         }
         //METHODS
         public void AddItem(T item)
@@ -76,6 +82,11 @@ namespace VEHICLE_SHOP.Vehicles.src.Repository
                 DeleteItem(GetItem(id));
                 AddItem(updatedItem);
             }
+        }
+
+        public void ReadItem(T item)
+        {
+            
         }
 
         public List<T> GetRepo()

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "I/IQYDNR4+s=",
+  "dgSpecHash": "xb8UVUfqYQk=",
   "success": true,
-  "projectFilePath": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\VEHICLE-SHOP.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Leandro\\Desktop\\Repo\\vehicle-shop\\VEHICLE-SHOP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

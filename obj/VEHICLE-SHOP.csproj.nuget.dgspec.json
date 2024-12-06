@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programacao\\Repos\\VEHICLE-SHOP\\VEHICLE-SHOP.csproj": {}
+    "C:\\Users\\Leandro\\Desktop\\Repo\\vehicle-shop\\VEHICLE-SHOP.csproj": {}
   },
   "projects": {
-    "D:\\Programacao\\Repos\\VEHICLE-SHOP\\VEHICLE-SHOP.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\Repo\\vehicle-shop\\VEHICLE-SHOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\VEHICLE-SHOP.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Repo\\vehicle-shop\\VEHICLE-SHOP.csproj",
         "projectName": "VEHICLE-SHOP",
-        "projectPath": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\VEHICLE-SHOP.csproj",
-        "packagesPath": "C:\\Users\\Mattheos\\.nuget\\packages\\",
-        "outputPath": "D:\\Programacao\\Repos\\VEHICLE-SHOP\\obj\\",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\Repo\\vehicle-shop\\VEHICLE-SHOP.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\Repo\\vehicle-shop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mattheos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

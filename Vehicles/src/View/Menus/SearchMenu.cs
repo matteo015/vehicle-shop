@@ -43,13 +43,13 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
             while (true)
             {
                 Vehicle? src = null;
-                VehicleRepository? srcList = null;
+                RepositoryClient<Vehicle>? srcList = null;
                 switch (base.GetUserOption())
                 {
                     case 0:
                         Clear();
                         DisplayTitle();
-                        src = SearchController.SearchId(VehicleShop.CurrentRepo);
+                        src = SearchController.SearchId(VehicleShop.CurrentRepository);
                         if (src is null)
                         {
                             Error("VEHICLE NOT FOUND");
@@ -57,46 +57,47 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
                             break;
                         }
                         else
-                            VehicleShop.CurrentRepo.ReadItem(src);
+                            //VehicleShop.CurrentRepository.ReadItem(src);
+                              VehicleShop.Controller.ReadVehicle(src);
                         ReadKey(true);
                         break;
                     case 1:
                         Clear();
                         DisplayTitle();
-                        srcList = SearchController.SearchMake(VehicleShop.CurrentRepo);
+                        srcList = SearchController.SearchMake(VehicleShop.CurrentRepository);
                         if (srcList is null)
                         {
                             Error("VEHICLE NOT FOUND");
                             Thread.Sleep(500);
                             break;
                         }
-                        RepoController.ShowRepo(srcList);
+                        RepositoryControllerView.ShowRepo(srcList);
                         ReadKey(true);
                         break;
                     case 2:
                         Clear();
                         DisplayTitle();
-                        srcList = SearchController.SearchModel(VehicleShop.CurrentRepo);
+                        srcList = SearchController.SearchModel(VehicleShop.CurrentRepository);
                         if (srcList is null)
                         {
                             Error("VEHICLE NOT FOUND");
                             Thread.Sleep(500);
                             break;
                         }
-                        RepoController.ShowRepo(srcList);
+                        RepositoryControllerView.ShowRepo(srcList);
                         ReadKey(true);
                         break;
                     case 3:
                         Clear();
                         DisplayTitle();
-                        srcList = SearchController.SearchYear(VehicleShop.CurrentRepo);
+                        srcList = SearchController.SearchYear(VehicleShop.CurrentRepository);
                         if (srcList is null)
                         {
                             Error("VEHICLE NOT FOUND");
                             Thread.Sleep(500);
                             break;
                         }
-                        RepoController.ShowRepo(srcList);
+                        RepositoryControllerView.ShowRepo(srcList);
                         ReadKey(true);
                         break;
                     case 4:

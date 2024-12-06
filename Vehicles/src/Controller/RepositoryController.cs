@@ -10,21 +10,19 @@ using VEHICLE_SHOP.Vehicles.src.View.Vehicles;
 
 namespace VEHICLE_SHOP.Vehicles.src.Controller
 {
-    public class VehicleController<T> where T : Vehicle
+    public class RepositoryController<T>(IRepositoryClient<T> repositoryClient,
+                                         IRepositoryService<T> repositoryService) where T : Vehicle
     {
-        private VehicleRepository<T> repository;
+        private RepositoryClient<T> repository = (RepositoryClient<T>)repositoryClient;
         private readonly IVehicleView<T> view;
-        private readonly IVehicleService<T> service;
+        private readonly IRepositoryService<T> service = repositoryService;
 
-        public VehicleController(VehicleRepository<T> repo) 
+        public void LoadFromStock(IRepositoryClient<T> repositoryToLoad)
         {
-            this.repository = repo;
-            service = new(repo);
-        }
+            service.LoadRepository(repositoryToLoad);
 
-        public void LoadFromStock(IRepo<T> repositoryToLoad)
-        {
-            VehicleShop.CurrentRepository = repositoryToLoad as VehicleRepository<Vehicle>;
+            VehicleShop.CurrentRepository = repositoryToLoad as RepositoryClient<Vehicle>;
+            VehicleShop.RepoOperations.currentRepoId = VehicleShop.CurrentRepository._repoId;
         }
 
         public void ReadVehicle(T vehicle)

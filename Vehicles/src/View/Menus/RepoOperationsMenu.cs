@@ -13,7 +13,7 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
     internal class RepoOperationsMenu : Menu
     {
         private string[] _LocalOptions = { "EDIT REPO", "LOAD REPO", "DELETE REPO", "Back" };
-        public int currentRepoId { get; private set; }
+        public int currentRepoId { get; set; }
         public RepoOperationsMenu()
         {
             ConsoleMenuType = ConsoleTitle + "REPOSITORY";
@@ -45,11 +45,11 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
             DisplayOptions("");
         }
 
-        public void LoadRepository(VehicleRepository repository)
+        /*public void LoadRepository(VehicleRepository repository)
         {
             VehicleShop.CurrentRepo = repository;
             currentRepoId = repository._repoId;
-        }
+        }*/
         public override void RunMenu()
         {
             while (true)
@@ -57,7 +57,7 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
                 switch (base.GetUserOption())
                 {
                     case 0:
-                        if(VehicleShop.CurrentRepo == null)
+                        if(VehicleShop.CurrentRepository == null)
                         {
                             Clear();
                             DisplayTitle();

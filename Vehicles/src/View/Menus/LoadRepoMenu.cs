@@ -38,8 +38,8 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
             int SelectedId = Convert.ToInt32(Ids[GetUserOption()]);
             Ids.Clear();
 
-            VehicleShop.RepoOperations.LoadRepository(
-                VehicleShop.Stock.Find(x=> x._repoId == SelectedId));
-        }
+            VehicleShop.Controller.LoadFromStock(VehicleShop.Stock.Find(x => x._repoId == SelectedId));
+            VehicleShop.RepoOperations.currentRepoId = SelectedId;
+		}
     }
 }

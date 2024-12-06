@@ -7,11 +7,12 @@ using VEHICLE_SHOP.Vehicles.src.Model.Base;
 
 namespace VEHICLE_SHOP.Vehicles.src.Repository
 {
-    public interface IRepo<T> where T : Vehicle
+    public interface IRepositoryClient<T> where T : Vehicle
     {
         public void AddItem(T item);
         public void DeleteItem(T item);
         public void DeleteItem(int id);
+        public void ReadItem(T item);
         public void UpdateItem(T item, T updatedItem);
         public void UpdateItem(int id, T updatedItem);
         public T GetItem(T item);

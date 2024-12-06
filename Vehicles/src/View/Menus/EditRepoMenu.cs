@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using static System.Console;
 using VEHICLE_SHOP.Vehicles.src.Model.Base;
 using static VEHICLE_SHOP.Vehicles.src.Utils.ConsoleUtils;
-using static VEHICLE_SHOP.Vehicles.src.Controller.RepoController;
+using static VEHICLE_SHOP.Vehicles.src.Controller.RepositoryControllerView;
 
 namespace VEHICLE_SHOP.Vehicles.src.View.Menus
 {
@@ -42,7 +42,7 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
                                 break;
                             case ConsoleKey.N:
                                 Clear();
-                                InsertVehicle(VehicleShop.CurrentRepo);
+                                InsertVehicle(VehicleShop.CurrentRepository);
                                 break;
                             default:
                                 WriteLine($"{FRED} INVALID INPUT.");
@@ -53,7 +53,7 @@ namespace VEHICLE_SHOP.Vehicles.src.View.Menus
                     case 1:
                         Clear();
                         DisplayTitle();
-                        RemoveVehicle(VehicleShop.CurrentRepo);
+                        RemoveVehicle(VehicleShop.CurrentRepository);
                         break;
                     case 2:
 
